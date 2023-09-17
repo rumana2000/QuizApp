@@ -1,10 +1,11 @@
 import Account from "./account"
 import logo from "./assets/images/idea.png";
+import classes from "./style/Nav.module.css";
 
 export default function nav() {
   return (
     <>
-    <header>    
+    <header className={classes.header}>    
       <div className="container mx-auto">
         <div className = 'flex justify-between py-2 '>
           <div className = 'topHeader flex items-center'>

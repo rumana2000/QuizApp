@@ -1,12 +1,12 @@
 import Layout from "./Layout";
-import Home from "./Home";
+import QuizHome from "./QuizHome";
 
 function App() {
   return (
   <Layout>
-    <Home/>
+    <QuizHome />
   </Layout>
   );
 }
 
-export default App
+export default App;
