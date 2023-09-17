@@ -1,0 +1,16 @@
+header {
+  border-bottom: 2px solid #eeee;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 15px;
+}
+
+.account a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: blue;
+}
