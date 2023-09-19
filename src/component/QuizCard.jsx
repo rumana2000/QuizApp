@@ -1,8 +1,10 @@
-import cardImageLaravel from './assets/images/card-laravel.png';
+import cardImageLaravel from '../assets/images/card-laravel.png';
+import { NavLink } from 'react-router-dom';
 export default function QuizCard() {
   return(
     <>
-    <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <NavLink to="/quiz"> 
+        <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-6">
           <a href="#">
             <img className="rounded-t-lg object-cover h-48 w-96" src ={cardImageLaravel} alt="" />
           </a>
@@ -14,7 +16,9 @@ export default function QuizCard() {
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
               acquisitions of 2021 so far, in reverse chronological order.</p>
           </div>
-    </div>
+        </div>
+    </NavLink>
+   
     </>
     
   )

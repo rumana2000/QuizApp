@@ -1,11 +1,23 @@
-import Layout from "./Layout";
-import QuizHome from "./QuizHome";
+import Layout from "./component/Layout";
+import Quiz from "./component/Quiz";
+import Result from "./component/Result";
+import LogIn from "./component/LogIn";
+import SignUp from "./component/SignUp";
+import QuizHome from "./component/QuizHome";
+import { Route,Routes } from "react-router-dom";
 
 function App() {
   return (
-  <Layout>
-    <QuizHome />
-  </Layout>
+    <Routes>
+      <Route path="/*" element= {<Layout/>}>
+      <Route index  element= {<QuizHome/>}/>
+      <Route path="signUp" element= {<SignUp/>}/>
+      <Route path="logIn" element= {<LogIn/>}/>
+      <Route path="result" element= {<Result/>}/>
+      <Route path="quiz" element= {<Quiz/>}/>
+      </Route>
+    </Routes>
+ 
   );
 }
 
