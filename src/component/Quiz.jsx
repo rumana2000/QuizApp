@@ -1,4 +1,4 @@
-import ResultCheackBox from "./ResultCheackBox";
+import ResultCheackBox from "./pages/ResultCheackBox";
 import puasImage from "../assets/images/play.png";
 import { NavLink } from "react-router-dom";
 export default function Quiz() {

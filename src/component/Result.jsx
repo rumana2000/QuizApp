@@ -1,4 +1,4 @@
-import ResultCheackBox from "./ResultCheackBox";
+import ResultCheackBox from "./pages/ResultCheackBox";
 import SuccessImage from "../assets/images/success.png";
 import QuastionImage from "../assets/images/question-mark.png";
 export default function Result() {

@@ -1,4 +1,4 @@
-import SignUpImg from "../assets/images/signup.png";
+import SignUpImg from "../../assets/images/signup.png";
 
 export default function SignImage () {
   return (

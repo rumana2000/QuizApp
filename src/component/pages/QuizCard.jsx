@@ -1,4 +1,4 @@
-import cardImageLaravel from '../assets/images/card-laravel.png';
+import cardImageLaravel from '../../assets/images/card-laravel.png';
 import { NavLink } from 'react-router-dom';
 export default function QuizCard() {
   return(

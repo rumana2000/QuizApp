@@ -1,4 +1,4 @@
-import QuizCard from "./QuizCard";
+import QuizCard from "./pages/QuizCard";
 import { NavLink } from "react-router-dom";
 
 export default function QuizHome() {

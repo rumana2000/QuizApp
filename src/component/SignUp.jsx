@@ -1,5 +1,5 @@
-import SignImage from "./SignImage";
-import SignForm from "./SignForm";
+import SignImage from "./pages/SignImage";
+import SignForm from "./pages/SignForm";
 
 export default function SignUp() {
   return (
