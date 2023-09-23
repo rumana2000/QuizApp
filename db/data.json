@@ -1,0 +1,1755 @@
+{
+  "quiz_categories": {
+    "1": {
+      "quizCategoryId": "php",
+      "title": "Mastering PHP: Test Your Knowledge with this PHP Quiz!",
+      "noq": 4
+    },
+    "2": {
+      "quizCategoryId": "javascript",
+      "title": "JavaScript Jedi: Test Your Skills with this JavaScript Quiz!",
+      "noq": 4
+    },
+    "3": {
+      "quizCategoryId": "react",
+      "title": "React Rendezvous: Challenge Your React Knowledge with this Quiz!",
+      "noq": 4
+    },
+    "4": {
+      "quizCategoryId": "laravel",
+      "title": "Laravel Luminary: Test Your Laravel Expertise with this Quiz!",
+      "noq": 4
+    },
+    "5": {
+      "quizCategoryId": "css",
+      "title": "CSS Conundrum: Put Your CSS Skills to the Test with this Quiz!",
+      "noq": 4
+    },
+    "6": {
+      "quizCategoryId": "html",
+      "title": "HTML Whiz: Prove Your HTML Proficiency in this Quiz!",
+      "noq": 4
+    },
+    "7": {
+      "quizCategoryId": "tailwindcss",
+      "title": "TailwindCSS Triumph: Test Your Mastery of TailwindCSS with this Quiz!",
+      "noq": 4
+    },
+    "8": {
+      "quizCategoryId": "react-router",
+      "title": "React Router Royale: Challenge Your React Router Knowledge in this Quiz!",
+      "noq": 4
+    },
+    "9": {
+      "quizCategoryId": "scss",
+      "title": "SCSS Sorcery: Test Your Skills in SCSS with this Quiz!",
+      "noq": 4
+    },
+    "10": {
+      "quizCategoryId": "docker",
+      "title": "Docker Dynamo: Prove Your Docker Prowess in this Quiz!",
+      "noq": 4
+    },
+    "11": {
+      "quizCategoryId": "kubernetes",
+      "title": "Kubernetes Conqueror: Test Your Kubernetes Knowledge with this Quiz!",
+      "noq": 4
+    },
+    "12": {
+      "quizCategoryId": "python",
+      "title": "Python Prodigy: Challenge Your Python Proficiency in this Quiz!",
+      "noq": 4
+    },
+    "13": {
+      "quizCategoryId": "django",
+      "title": "Django Dynamo: Prove Your Django Skills with this Quiz!",
+      "noq": 4
+    },
+    "14": {
+      "quizCategoryId": "java",
+      "title": "Java Juggernaut: Test Your Java Expertise with this Quiz!",
+      "noq": 4
+    },
+    "15": {
+      "quizCategoryId": "nodejs",
+      "title": "Node.js Navigator: Challenge Your Node.js Knowledge in this Quiz!",
+      "noq": 4
+    },
+    "16": {
+      "quizCategoryId": "redux",
+      "title": "Redux Ruler: Test Your Redux Knowledge with this Quiz!",
+      "noq": 4
+    },
+    "17": {
+      "quizCategoryId": "nextjs",
+      "title": "Next.js Novice: Prove Your Next.js Proficiency in this Quiz!",
+      "noq": 4
+    },
+    "18": {
+      "quizCategoryId": "vuejs",
+      "title": "Vue.js Virtuoso: Test Your Vue.js Skills with this Quiz!",
+      "noq": 4
+    },
+    "19": {
+      "quizCategoryId": "figma",
+      "title": "Figma Fundamentals: Challenge Your Figma Knowledge in this Quiz!",
+      "noq": 4
+    },
+    "20": {
+      "quizCategoryId": "restapi",
+      "title": "REST API Explorer: Test Your REST API Knowledge with this Quiz!",
+      "noq": 4
+    },
+    "21": {
+      "quizCategoryId": "graphql",
+      "title": "GraphQL Guru: Prove Your GraphQL Expertise in this Quiz!",
+      "noq": 4
+    },
+    "22": {
+      "quizCategoryId": "flutter",
+      "title": "Flutter Maestro: Test Your Flutter Skills with this Quiz!",
+      "noq": 4
+    },
+    "23": {
+      "quizCategoryId": "firebase",
+      "title": "Firebase Fanatic: Challenge Your Firebase Knowledge in this Quiz!",
+      "noq": 4
+    }
+  },
+  "quiz_questions": {
+    "css": [
+      {
+        "question": "What does CSS stand for?",
+        "options": [
+          {
+            "text": "Cascading Style Sheet",
+            "correct": true
+          },
+          {
+            "text": "Computer Style Sheet",
+            "correct": true
+          },
+          {
+            "text": "Creative Style Sheet",
+            "correct": false
+          },
+          {
+            "text": "Colorful Style Sheet",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which CSS property is used to change the text color of an element?",
+        "options": [
+          {
+            "text": "color",
+            "correct": true
+          },
+          {
+            "text": "font-color",
+            "correct": false
+          },
+          {
+            "text": "text-color",
+            "correct": false
+          },
+          {
+            "text": "foreground-color",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What does the 'box-sizing' property in CSS control?",
+        "options": [
+          {
+            "text": "Element's width and height calculation",
+            "correct": true
+          },
+          {
+            "text": "Element's position in the box model",
+            "correct": false
+          },
+          {
+            "text": "Element's background color",
+            "correct": false
+          },
+          {
+            "text": "Element's border style",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which CSS selector is used to select all elements with the class 'btn'?",
+        "options": [
+          {
+            "text": ".btn",
+            "correct": true
+          },
+          {
+            "text": "#btn",
+            "correct": false
+          },
+          {
+            "text": "btn",
+            "correct": false
+          },
+          {
+            "text": "button",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "html": [
+      {
+        "question": "What does HTML stand for?",
+        "options": [
+          {
+            "text": "Hyper Text Markup Language",
+            "correct": true
+          },
+          {
+            "text": "Highly Technical Markup Language",
+            "correct": false
+          },
+          {
+            "text": "Hyperlink and Text Markup Language",
+            "correct": false
+          },
+          {
+            "text": "High-Level Text Markup Language",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which HTML tag is used to create a hyperlink?",
+        "options": [
+          {
+            "text": "<a>",
+            "correct": true
+          },
+          {
+            "text": "<link>",
+            "correct": false
+          },
+          {
+            "text": "<h1>",
+            "correct": false
+          },
+          {
+            "text": "<p>",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the correct HTML element for the largest heading?",
+        "options": [
+          {
+            "text": "<h1>",
+            "correct": true
+          },
+          {
+            "text": "<h6>",
+            "correct": false
+          },
+          {
+            "text": "<heading>",
+            "correct": false
+          },
+          {
+            "text": "<head>",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which HTML tag is used to define an unordered list?",
+        "options": [
+          {
+            "text": "<ul>",
+            "correct": true
+          },
+          {
+            "text": "<ol>",
+            "correct": false
+          },
+          {
+            "text": "<li>",
+            "correct": false
+          },
+          {
+            "text": "<list>",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "tailwindcss": [
+      {
+        "question": "What is the utility class for setting the text color to red in Tailwind CSS?",
+        "options": [
+          {
+            "text": "text-red-500",
+            "correct": true
+          },
+          {
+            "text": "text-color-red",
+            "correct": false
+          },
+          {
+            "text": "text-red",
+            "correct": false
+          },
+          {
+            "text": "red-text",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which class is used to add padding to all sides of an element in Tailwind CSS?",
+        "options": [
+          {
+            "text": "p-4",
+            "correct": true
+          },
+          {
+            "text": "padding-4",
+            "correct": false
+          },
+          {
+            "text": "pad-4",
+            "correct": false
+          },
+          {
+            "text": "pl-4 pr-4 pt-4 pb-4",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "How can you hide an element in Tailwind CSS?",
+        "options": [
+          {
+            "text": "hidden",
+            "correct": true
+          },
+          {
+            "text": "invisible",
+            "correct": true
+          },
+          {
+            "text": "opacity-0",
+            "correct": false
+          },
+          {
+            "text": "display-none",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which class is used to create a responsive flex container in Tailwind CSS?",
+        "options": [
+          {
+            "text": "flex",
+            "correct": true
+          },
+          {
+            "text": "container",
+            "correct": false
+          },
+          {
+            "text": "grid",
+            "correct": false
+          },
+          {
+            "text": "responsive-flex",
+            "correct": true
+          }
+        ]
+      }
+    ],
+    "react-router": [
+      {
+        "question": "What is the purpose of the 'BrowserRouter' component in React Router?",
+        "options": [
+          {
+            "text": "To provide a router for the entire application",
+            "correct": true
+          },
+          {
+            "text": "To create a single route",
+            "correct": false
+          },
+          {
+            "text": "To handle authentication",
+            "correct": false
+          },
+          {
+            "text": "To style the navigation bar",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which React Router component is used to render a specific route?",
+        "options": [
+          {
+            "text": "<Route>",
+            "correct": true
+          },
+          {
+            "text": "<Link>",
+            "correct": false
+          },
+          {
+            "text": "<Router>",
+            "correct": false
+          },
+          {
+            "text": "<Switch>",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the purpose of the 'Link' component in React Router?",
+        "options": [
+          {
+            "text": "To navigate between routes",
+            "correct": true
+          },
+          {
+            "text": "To style the navigation bar",
+            "correct": false
+          },
+          {
+            "text": "To create a new route",
+            "correct": false
+          },
+          {
+            "text": "To handle state management",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which hook is used to access the current location in React Router?",
+        "options": [
+          {
+            "text": "useLocation()",
+            "correct": true
+          },
+          {
+            "text": "useRouter()",
+            "correct": false
+          },
+          {
+            "text": "useHistory()",
+            "correct": false
+          },
+          {
+            "text": "useRoute()",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "scss": [
+      {
+        "question": "What does SCSS stand for?",
+        "options": [
+          {
+            "text": "Sassy Cascading Style Sheets",
+            "correct": true
+          },
+          {
+            "text": "Superior Cascading Style Sheets",
+            "correct": false
+          },
+          {
+            "text": "Structured Cascading Style Sheets",
+            "correct": false
+          },
+          {
+            "text": "Simple Cascading Style Sheets",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which SCSS feature allows you to nest CSS selectors inside one another?",
+        "options": [
+          {
+            "text": "Nesting",
+            "correct": true
+          },
+          {
+            "text": "Inheritance",
+            "correct": false
+          },
+          {
+            "text": "Extension",
+            "correct": false
+          },
+          {
+            "text": "Modularization",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the file extension for SCSS files?",
+        "options": [
+          {
+            "text": ".scss",
+            "correct": true
+          },
+          {
+            "text": ".css",
+            "correct": false
+          },
+          {
+            "text": ".html",
+            "correct": false
+          },
+          {
+            "text": ".js",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which SCSS function is used to perform mathematical operations?",
+        "options": [
+          {
+            "text": "calc()",
+            "correct": true
+          },
+          {
+            "text": "add()",
+            "correct": false
+          },
+          {
+            "text": "subtract()",
+            "correct": false
+          },
+          {
+            "text": "multiply()",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "docker": [
+      {
+        "question": "What is Docker used for?",
+        "options": [
+          {
+            "text": "Containerization",
+            "correct": true
+          },
+          {
+            "text": "Virtualization",
+            "correct": false
+          },
+          {
+            "text": "Cloud computing",
+            "correct": false
+          },
+          {
+            "text": "Web development",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which command is used to build a Docker image from a Dockerfile?",
+        "options": [
+          {
+            "text": "docker create",
+            "correct": false
+          },
+          {
+            "text": "docker build",
+            "correct": true
+          },
+          {
+            "text": "docker run",
+            "correct": false
+          },
+          {
+            "text": "docker push",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is a Docker container?",
+        "options": [
+          {
+            "text": "A lightweight, standalone executable package that includes everything needed to run a piece of software",
+            "correct": true
+          },
+          {
+            "text": "A virtual machine",
+            "correct": false
+          },
+          {
+            "text": "A cloud service",
+            "correct": false
+          },
+          {
+            "text": "A serverless function",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which Docker command is used to list all running containers?",
+        "options": [
+          {
+            "text": "docker ps",
+            "correct": true
+          },
+          {
+            "text": "docker ls",
+            "correct": false
+          },
+          {
+            "text": "docker containers",
+            "correct": false
+          },
+          {
+            "text": "docker status",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "kubernetes": [
+      {
+        "question": "What is Kubernetes used for?",
+        "options": [
+          {
+            "text": "Container orchestration",
+            "correct": true
+          },
+          {
+            "text": "Database management",
+            "correct": false
+          },
+          {
+            "text": "Web development",
+            "correct": false
+          },
+          {
+            "text": "Virtualization",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is a Kubernetes Pod?",
+        "options": [
+          {
+            "text": "The smallest deployable unit in Kubernetes, representing a single instance of a running process",
+            "correct": true
+          },
+          {
+            "text": "A group of containers",
+            "correct": false
+          },
+          {
+            "text": "A virtual machine",
+            "correct": false
+          },
+          {
+            "text": "A Kubernetes cluster",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is a Kubernetes Service?",
+        "options": [
+          {
+            "text": "An abstract way to expose an application running on a set of Pods as a network service",
+            "correct": true
+          },
+          {
+            "text": "A container image",
+            "correct": false
+          },
+          {
+            "text": "A Kubernetes deployment",
+            "correct": false
+          },
+          {
+            "text": "A DNS record",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which tool is commonly used for deploying and managing applications on Kubernetes?",
+        "options": [
+          {
+            "text": "Helm",
+            "correct": true
+          },
+          {
+            "text": "Docker Compose",
+            "correct": false
+          },
+          {
+            "text": "Kubeconfig",
+            "correct": false
+          },
+          {
+            "text": "Kubectl",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "python": [
+      {
+        "question": "Which of the following is true about Python?",
+        "options": [
+          {
+            "text": "Python is a high-level programming language.",
+            "correct": true
+          },
+          {
+            "text": "Python is statically typed.",
+            "correct": false
+          },
+          {
+            "text": "Python is primarily used for system programming.",
+            "correct": false
+          },
+          {
+            "text": "Python is not an open-source language.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the correct way to comment a single line in Python?",
+        "options": [
+          {
+            "text": "# This is a comment",
+            "correct": true
+          },
+          {
+            "text": "// This is a comment",
+            "correct": false
+          },
+          {
+            "text": "/* This is a comment */",
+            "correct": false
+          },
+          {
+            "text": "-- This is a comment",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which data type is used to store a sequence of characters in Python?",
+        "options": [
+          {
+            "text": "String",
+            "correct": true
+          },
+          {
+            "text": "Integer",
+            "correct": false
+          },
+          {
+            "text": "Float",
+            "correct": false
+          },
+          {
+            "text": "Boolean",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the result of 5 + 3.0 in Python?",
+        "options": [
+          {
+            "text": "8",
+            "correct": true
+          },
+          {
+            "text": "8.0",
+            "correct": true
+          },
+          {
+            "text": "5.0",
+            "correct": false
+          },
+          {
+            "text": "Error",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "django": [
+      {
+        "question": "What is Django?",
+        "options": [
+          {
+            "text": "A high-level Python web framework",
+            "correct": true
+          },
+          {
+            "text": "A database management system",
+            "correct": false
+          },
+          {
+            "text": "A JavaScript library",
+            "correct": false
+          },
+          {
+            "text": "A version control system",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the purpose of Django's ORM (Object-Relational Mapping)?",
+        "options": [
+          {
+            "text": "To map database tables to Python objects",
+            "correct": true
+          },
+          {
+            "text": "To create graphical user interfaces",
+            "correct": false
+          },
+          {
+            "text": "To optimize website performance",
+            "correct": false
+          },
+          {
+            "text": "To manage server-side logic",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the Django admin panel used for?",
+        "options": [
+          {
+            "text": "To manage the application's data and settings",
+            "correct": true
+          },
+          {
+            "text": "To design user interfaces",
+            "correct": false
+          },
+          {
+            "text": "To write Python code",
+            "correct": false
+          },
+          {
+            "text": "To deploy the application",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which command is used to create a new Django project?",
+        "options": [
+          {
+            "text": "django startproject",
+            "correct": true
+          },
+          {
+            "text": "python createproject",
+            "correct": false
+          },
+          {
+            "text": "django newproject",
+            "correct": false
+          },
+          {
+            "text": "python startproject",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "java": [
+      {
+        "question": "Which of the following is true about Java?",
+        "options": [
+          {
+            "text": "Java is a statically typed language.",
+            "correct": true
+          },
+          {
+            "text": "Java is a scripting language.",
+            "correct": false
+          },
+          {
+            "text": "Java code is compiled into machine code.",
+            "correct": false
+          },
+          {
+            "text": "Java does not support object-oriented programming.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the keyword used to define a class in Java?",
+        "options": [
+          {
+            "text": "class",
+            "correct": true
+          },
+          {
+            "text": "struct",
+            "correct": false
+          },
+          {
+            "text": "object",
+            "correct": false
+          },
+          {
+            "text": "type",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which data type is used to represent whole numbers in Java?",
+        "options": [
+          {
+            "text": "int",
+            "correct": true
+          },
+          {
+            "text": "float",
+            "correct": false
+          },
+          {
+            "text": "double",
+            "correct": false
+          },
+          {
+            "text": "boolean",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the result of 10 % 3 in Java?",
+        "options": [
+          {
+            "text": "1",
+            "correct": true
+          },
+          {
+            "text": "0.333",
+            "correct": false
+          },
+          {
+            "text": "3",
+            "correct": false
+          },
+          {
+            "text": "10",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "nodejs": [
+      {
+        "question": "What is Node.js?",
+        "options": [
+          {
+            "text": "A runtime environment for executing JavaScript code on the server side",
+            "correct": true
+          },
+          {
+            "text": "A JavaScript framework for building web applications",
+            "correct": false
+          },
+          {
+            "text": "A text editor for writing JavaScript code",
+            "correct": false
+          },
+          {
+            "text": "A database management system",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which package manager is commonly used with Node.js to manage dependencies?",
+        "options": [
+          {
+            "text": "npm (Node Package Manager)",
+            "correct": true
+          },
+          {
+            "text": "pip",
+            "correct": false
+          },
+          {
+            "text": "yarn",
+            "correct": false
+          },
+          {
+            "text": "composer",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the primary use of the 'require' function in Node.js?",
+        "options": [
+          {
+            "text": "To import external modules",
+            "correct": true
+          },
+          {
+            "text": "To define a new function",
+            "correct": false
+          },
+          {
+            "text": "To create a new file",
+            "correct": false
+          },
+          {
+            "text": "To start a server",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which core module in Node.js is used to work with file system operations?",
+        "options": [
+          {
+            "text": "fs (File System)",
+            "correct": true
+          },
+          {
+            "text": "http",
+            "correct": false
+          },
+          {
+            "text": "path",
+            "correct": false
+          },
+          {
+            "text": "util",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "redux": [
+      {
+        "question": "What is Redux?",
+        "options": [
+          {
+            "text": "A state management library for JavaScript applications",
+            "correct": true
+          },
+          {
+            "text": "A testing framework for React",
+            "correct": false
+          },
+          {
+            "text": "A CSS preprocessor",
+            "correct": false
+          },
+          {
+            "text": "A JavaScript framework for building games",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "In Redux, what is the 'store'?",
+        "options": [
+          {
+            "text": "A single source of truth for the application's state",
+            "correct": true
+          },
+          {
+            "text": "A database for storing user data",
+            "correct": false
+          },
+          {
+            "text": "A component in the UI",
+            "correct": false
+          },
+          {
+            "text": "A middleware for handling async actions",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is an 'action' in Redux?",
+        "options": [
+          {
+            "text": "A plain JavaScript object that describes a change in state",
+            "correct": true
+          },
+          {
+            "text": "A React component",
+            "correct": false
+          },
+          {
+            "text": "A function that updates the state directly",
+            "correct": false
+          },
+          {
+            "text": "A CSS styling rule",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is a 'reducer' in Redux?",
+        "options": [
+          {
+            "text": "A function that specifies how the application's state changes in response to actions",
+            "correct": true
+          },
+          {
+            "text": "A component that renders UI elements",
+            "correct": false
+          },
+          {
+            "text": "A middleware for handling API requests",
+            "correct": false
+          },
+          {
+            "text": "A utility for routing in React applications",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "nextjs": [
+      {
+        "question": "What is Next.js?",
+        "options": [
+          {
+            "text": "A React framework for building server-rendered applications",
+            "correct": true
+          },
+          {
+            "text": "A database management system",
+            "correct": false
+          },
+          {
+            "text": "A text editor for writing JavaScript code",
+            "correct": false
+          },
+          {
+            "text": "A state management library for React",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which folder contains pages that can be automatically routed in Next.js?",
+        "options": [
+          {
+            "text": "pages",
+            "correct": true
+          },
+          {
+            "text": "components",
+            "correct": false
+          },
+          {
+            "text": "public",
+            "correct": false
+          },
+          {
+            "text": "styles",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is 'getStaticProps' used for in Next.js?",
+        "options": [
+          {
+            "text": "To fetch data at build time and pre-render a page",
+            "correct": true
+          },
+          {
+            "text": "To create a new component",
+            "correct": false
+          },
+          {
+            "text": "To define a route",
+            "correct": false
+          },
+          {
+            "text": "To handle API requests",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which command is used to start a Next.js development server?",
+        "options": [
+          {
+            "text": "npm run dev",
+            "correct": true
+          },
+          {
+            "text": "npm start",
+            "correct": false
+          },
+          {
+            "text": "npm build",
+            "correct": false
+          },
+          {
+            "text": "npm serve",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "vuejs": [
+      {
+        "question": "What is Vue.js?",
+        "options": [
+          {
+            "text": "A JavaScript framework for building user interfaces",
+            "correct": true
+          },
+          {
+            "text": "A server-side rendering library",
+            "correct": false
+          },
+          {
+            "text": "A testing framework",
+            "correct": false
+          },
+          {
+            "text": "A version control system",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which directive is used to bind an attribute to an expression in Vue.js?",
+        "options": [
+          {
+            "text": "v-bind",
+            "correct": true
+          },
+          {
+            "text": "v-model",
+            "correct": false
+          },
+          {
+            "text": "v-if",
+            "correct": false
+          },
+          {
+            "text": "v-for",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the 'v-model' directive used for in Vue.js?",
+        "options": [
+          {
+            "text": "Two-way data binding",
+            "correct": true
+          },
+          {
+            "text": "Styling elements",
+            "correct": false
+          },
+          {
+            "text": "Creating components",
+            "correct": false
+          },
+          {
+            "text": "Routing",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which component lifecycle hook is called after a component is inserted into the DOM in Vue.js?",
+        "options": [
+          {
+            "text": "mounted",
+            "correct": true
+          },
+          {
+            "text": "created",
+            "correct": false
+          },
+          {
+            "text": "updated",
+            "correct": false
+          },
+          {
+            "text": "destroyed",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "figma": [
+      {
+        "question": "What is Figma?",
+        "options": [
+          {
+            "text": "A cloud-based design tool for creating user interfaces",
+            "correct": true
+          },
+          {
+            "text": "A programming language",
+            "correct": false
+          },
+          {
+            "text": "A version control system",
+            "correct": false
+          },
+          {
+            "text": "A web development framework",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which feature in Figma allows multiple designers to collaborate in real-time?",
+        "options": [
+          {
+            "text": "Multiplayer Mode",
+            "correct": true
+          },
+          {
+            "text": "Version Control",
+            "correct": false
+          },
+          {
+            "text": "Prototyping",
+            "correct": false
+          },
+          {
+            "text": "Code Export",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is a 'frame' in Figma?",
+        "options": [
+          {
+            "text": "A container for organizing and displaying design elements",
+            "correct": true
+          },
+          {
+            "text": "A layer style",
+            "correct": false
+          },
+          {
+            "text": "A typography setting",
+            "correct": false
+          },
+          {
+            "text": "A vector shape",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the purpose of the 'Prototype' tab in Figma?",
+        "options": [
+          {
+            "text": "To create interactive prototypes of a design",
+            "correct": true
+          },
+          {
+            "text": "To export code for web development",
+            "correct": false
+          },
+          {
+            "text": "To manage design assets",
+            "correct": false
+          },
+          {
+            "text": "To collaborate with developers",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "restapi": [
+      {
+        "question": "What does REST API stand for?",
+        "options": [
+          {
+            "text": "Representational State Transfer Application Programming Interface",
+            "correct": true
+          },
+          {
+            "text": "Remote Server Text Application Programming Interface",
+            "correct": false
+          },
+          {
+            "text": "Resourceful Server Transfer Application Programming Interface",
+            "correct": false
+          },
+          {
+            "text": "Responsive Server Text Application Programming Interface",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which HTTP method is used to retrieve data from a REST API?",
+        "options": [
+          {
+            "text": "GET",
+            "correct": true
+          },
+          {
+            "text": "POST",
+            "correct": false
+          },
+          {
+            "text": "PUT",
+            "correct": false
+          },
+          {
+            "text": "DELETE",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the purpose of the 'status code' in an HTTP response from a REST API?",
+        "options": [
+          {
+            "text": "To indicate the outcome of the request",
+            "correct": true
+          },
+          {
+            "text": "To specify the content type of the response",
+            "correct": false
+          },
+          {
+            "text": "To authenticate the request",
+            "correct": false
+          },
+          {
+            "text": "To compress the response data",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which data format is commonly used for representing data in a REST API response?",
+        "options": [
+          {
+            "text": "JSON (JavaScript Object Notation)",
+            "correct": true
+          },
+          {
+            "text": "XML (eXtensible Markup Language)",
+            "correct": false
+          },
+          {
+            "text": "HTML (HyperText Markup Language)",
+            "correct": false
+          },
+          {
+            "text": "CSV (Comma-Separated Values)",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "graphql": [
+      {
+        "question": "What is GraphQL?",
+        "options": [
+          {
+            "text": "A query language for your API, and a runtime for executing those queries by your server",
+            "correct": true
+          },
+          {
+            "text": "A JavaScript framework for building web applications",
+            "correct": false
+          },
+          {
+            "text": "A database management system",
+            "correct": false
+          },
+          {
+            "text": "A CSS preprocessor",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "In GraphQL, what is a 'schema'?",
+        "options": [
+          {
+            "text": "A description of your data and its structure",
+            "correct": true
+          },
+          {
+            "text": "A front-end component",
+            "correct": false
+          },
+          {
+            "text": "A user interface design",
+            "correct": false
+          },
+          {
+            "text": "A JavaScript function",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is a 'mutation' in GraphQL?",
+        "options": [
+          {
+            "text": "An operation for modifying data on the server",
+            "correct": true
+          },
+          {
+            "text": "A query for fetching data from the server",
+            "correct": false
+          },
+          {
+            "text": "A data type in GraphQL",
+            "correct": false
+          },
+          {
+            "text": "A directive for specifying how data should be fetched",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which query language is commonly used in GraphQL to request specific fields of data?",
+        "options": [
+          {
+            "text": "GraphQL Query Language",
+            "correct": true
+          },
+          {
+            "text": "SQL (Structured Query Language)",
+            "correct": false
+          },
+          {
+            "text": "JavaScript",
+            "correct": false
+          },
+          {
+            "text": "JSON (JavaScript Object Notation)",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "flutter": [
+      {
+        "question": "What is Flutter?",
+        "options": [
+          {
+            "text": "An open-source UI software development toolkit created by Google",
+            "correct": true
+          },
+          {
+            "text": "A database management system",
+            "correct": false
+          },
+          {
+            "text": "A JavaScript framework",
+            "correct": false
+          },
+          {
+            "text": "A text editor for writing mobile apps",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which programming language is used for building apps with Flutter?",
+        "options": [
+          {
+            "text": "Dart",
+            "correct": true
+          },
+          {
+            "text": "JavaScript",
+            "correct": false
+          },
+          {
+            "text": "Java",
+            "correct": false
+          },
+          {
+            "text": "Python",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is a 'widget' in Flutter?",
+        "options": [
+          {
+            "text": "A basic building block of a Flutter app's user interface",
+            "correct": true
+          },
+          {
+            "text": "A JavaScript framework",
+            "correct": false
+          },
+          {
+            "text": "A data structure",
+            "correct": false
+          },
+          {
+            "text": "A cloud service",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is the primary advantage of using Flutter for mobile app development?",
+        "options": [
+          {
+            "text": "Cross-platform development with a single codebase",
+            "correct": true
+          },
+          {
+            "text": "Native performance",
+            "correct": false
+          },
+          {
+            "text": "Ease of use",
+            "correct": false
+          },
+          {
+            "text": "Built-in machine learning capabilities",
+            "correct": false
+          }
+        ]
+      }
+    ],
+    "firebase": [
+      {
+        "question": "What is Firebase?",
+        "options": [
+          {
+            "text": "A mobile and web application development platform",
+            "correct": true
+          },
+          {
+            "text": "A text editor for writing code",
+            "correct": false
+          },
+          {
+            "text": "A version control system",
+            "correct": false
+          },
+          {
+            "text": "A database management system",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which cloud-based services are offered by Firebase?",
+        "options": [
+          {
+            "text": "Realtime Database, Cloud Firestore, Authentication, and more",
+            "correct": true
+          },
+          {
+            "text": "Text editing and collaboration tools",
+            "correct": false
+          },
+          {
+            "text": "Virtual machines and containers",
+            "correct": false
+          },
+          {
+            "text": "Video streaming services",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What is Firebase Authentication used for?",
+        "options": [
+          {
+            "text": "To authenticate users and manage user identity",
+            "correct": true
+          },
+          {
+            "text": "To store and retrieve data",
+            "correct": false
+          },
+          {
+            "text": "To host websites",
+            "correct": false
+          },
+          {
+            "text": "To analyze app performance",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which Firebase service is used for real-time data synchronization?",
+        "options": [
+          {
+            "text": "Realtime Database",
+            "correct": true
+          },
+          {
+            "text": "Cloud Storage",
+            "correct": false
+          },
+          {
+            "text": "Authentication",
+            "correct": false
+          },
+          {
+            "text": "Hosting",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  }
+}
