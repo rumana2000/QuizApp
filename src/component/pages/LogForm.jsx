@@ -20,8 +20,6 @@ export default function LogForm() {
     setPassword(e.target.value)
   }
 
-
-
   async function handleSubmit(e) {
     e.preventDefault();
     setLoading(true)
@@ -35,14 +33,10 @@ export default function LogForm() {
     }
     setLoading(false)
 
-
-
     console.log(email);
     console.log(password);
   }
-
-
-
+  
   return (
     <>
       <form onSubmit={handleSubmit}>

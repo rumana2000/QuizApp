@@ -1,6 +1,6 @@
 import Account from "./Account"
-import logo from "../assets/images/idea.png";
-import classes from "../style/Nav.module.css";
+import logo from "../../assets/images/idea.png";
+import classes from "../../style/Nav.module.css";
 import { NavLink } from "react-router-dom";
 
 export default function nav() {

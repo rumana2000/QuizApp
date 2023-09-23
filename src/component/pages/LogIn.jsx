@@ -1,5 +1,5 @@
-import LogImage from "../assets/images/login.png";
-import LogForm from "./pages/LogForm";
+import LogImage from "../../assets/images/login.png";
+import LogForm from "../pages/LogForm";
 
 export default function LogIn() {
   return (

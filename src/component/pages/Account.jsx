@@ -1,14 +1,13 @@
-import classes from "../style/Account.module.css";
+import classes from "../../style/Account.module.css";
 import { NavLink } from "react-router-dom";
-import logoutImg from "../assets/images/logout-svgrepo-com.svg";
-import { useAuth } from "../contexts/AuthContext";
+import logoutImg from "../../assets/images/logout-svgrepo-com.svg";
+import { useAuth } from "../../contexts/AuthContext";
 
 export default function Account() {
   const { authUser, logout } = useAuth();
   return (
     <>
       <div className={classes.account}>
-
         {authUser ?
           <>
             <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -24,9 +23,7 @@ export default function Account() {
             <NavLink to="/logIn"><a href="">Login</a></NavLink>
           </>
         }
-
       </div>
     </>
-
   );
 }

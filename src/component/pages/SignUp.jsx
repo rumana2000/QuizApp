@@ -1,5 +1,5 @@
-import SignImage from "./pages/SignImage";
-import SignForm from "./pages/SignForm";
+import SignImage from "../pages/SignImage";
+import SignForm from "../pages/SignForm";
 
 export default function SignUp() {
   return (
@@ -10,8 +10,6 @@ export default function SignUp() {
            <SignForm/>  
            <SignImage/>
           </div>
-
-
         </div>
       </div>
     </>

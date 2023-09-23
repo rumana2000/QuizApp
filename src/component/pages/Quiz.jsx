@@ -1,5 +1,5 @@
-import ResultCheackBox from "./pages/ResultCheackBox";
-import puasImage from "../assets/images/play.png";
+import ResultCheackBox from "../pages/ResultCheackBox";
+import puseImage from "../../assets/images/play.png";
 import { NavLink } from "react-router-dom";
 export default function Quiz() {
   return (
@@ -21,7 +21,7 @@ export default function Quiz() {
         <div>
         <div className="flex  flex-row-reverse m-20 mt-5">
           <div className="relative w-24 h-24 bg-gray-300 rounded-full">
-            <div className="absolute w-16 h-16 rounded-full m-4"><img className="bg-green-700 hover:bg-green-400 rounded-full" src={puasImage} alt="" /></div>
+            <div className="absolute w-16 h-16 rounded-full m-4"><img className="bg-green-700 hover:bg-green-400 rounded-full" src={puseImage} alt="" /></div>
           </div>
         </div>
         <div className="">
