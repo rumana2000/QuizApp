@@ -39,10 +39,11 @@ export default function useQuizList (page) {
       }
     }
 
-    setTimeout(() => {
-      fatchQuizList();
-    }, 3000)
+    // setTimeout(() => {
+    //   fatchQuizList();
+    // }, 3000)
 
+    fatchQuizList();
   },[page])
 
   return {

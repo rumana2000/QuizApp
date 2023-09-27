@@ -1,8 +1,8 @@
 
-export default function ResultCheackBox ({className,text}) {
+export default function ResultCheackBox ({className,  text, ...rest}) {
   return (
     <label className={className}>
-    <input type="checkbox"/> {text}
+    <input {...rest} type="checkbox"/>{text}
   </label>
   )
 }

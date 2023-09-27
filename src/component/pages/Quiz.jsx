@@ -1,44 +1,151 @@
 import ResultCheackBox from "../pages/ResultCheackBox";
 import puseImage from "../../assets/images/play.png";
-import { NavLink } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import useQuizQuestion from "../../Hook/useQuizQuestion";
+import { useEffect, useReducer, useState } from "react";
+import _ from "lodash";
+import { useAuth } from "../../contexts/AuthContext";
+import { getDatabase, ref, set } from "firebase/database";
+
+const initialState = [];
+
+function reducer(state, action) {
+  switch (action.type) {
+    case "questions":
+      action.value.forEach((question) => {
+        question.options.forEach((option) => {
+          option.checked = false
+        })
+      })
+      return action.value;
+    // console.log(action.value);
+
+    case "answerSheet":
+      let answerSheet = _.cloneDeep(state)
+      answerSheet[action.questionIdx].options[action.optionIdx].checked = action.checkValue;
+      return answerSheet;
+
+    default:
+      return state
+  }
+
+}
+
+
 export default function Quiz() {
+  const { id } = useParams()
+  // this quizQuestion came from database
+  const { quizQuestion, loading } = useQuizQuestion(id);
+
+  const [questionAnswer, dispatch] = useReducer(reducer, initialState);
+
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const { authUser } = useAuth();
+  const navigate = useNavigate();
+
+
+  console.log(questionAnswer);
+
+
+
+  useEffect(() => {
+    dispatch({
+      type: "questions",
+      value: quizQuestion
+    })
+  }, [quizQuestion])
+
+  function handelChange(e, idx) {
+    dispatch({
+      type: "answerSheet",
+      questionIdx: currentQuestion,
+      optionIdx: idx,
+      checkValue: e.target.checked
+    })
+  }
+
+  function handleNext() {
+    if (currentQuestion < questionAnswer.length - 1) {
+      setCurrentQuestion((prevQuestionIdx) => prevQuestionIdx + 1)
+    }
+
+    console.log(currentQuestion);
+  }
+
+  function handlePrevious() {
+    if (currentQuestion > 0) {
+      setCurrentQuestion((prevQuestionIdx) => prevQuestionIdx - 1)
+    }
+  }
+
+  const percentage = questionAnswer.length > 0 ? ((currentQuestion + 1) / (questionAnswer.length) * 100) : 0;
+
+
+  async function submit() {
+    const { uid } = authUser;
+    const db = getDatabase();
+    const resultRef = ref(db, `result/${uid}`);
+
+
+    console.log(questionAnswer);
+    await set(resultRef, {
+      [id]: questionAnswer
+    })
+    navigate(`/result/${id}`, {
+      state: {
+        questionAnswer,
+        quizQuestion
+    }
+    }
+  
+    );
+
+  }
+
+
   return (
-    <div className="main">
-      <div className="container mx-auto">
-        <div className="mt-10">
-          <h2 className="font-bold text-2xl">Pick three of your favorite Star Wars Flims</h2>
-          <p className="font-medium text-lg mt-5  mb-2">Question can have multiple answers</p>
-          <hr className="mt-5"/>
-        </div>
-        <div className="grid gap-4 grid-cols-2 mt-10">
-          <ResultCheackBox className="w-11/12 p-5 rounded-lg hover:bg-gray-400 bg-gray-300 " text="A New Hope 1"/>
-          <ResultCheackBox className="w-11/12 p-5 rounded-lg hover:bg-gray-400 bg-gray-300 " text="A New Hope 1"/>
-          <ResultCheackBox className="w-11/12 p-5 rounded-lg hover:bg-gray-400 bg-gray-300 " text="A New Hope 1"/>
-          <ResultCheackBox className="w-11/12 p-5 rounded-lg hover:bg-gray-400 bg-gray-300 " text="A New Hope 1"/>
-          <ResultCheackBox className="w-11/12 p-5 rounded-lg hover:bg-gray-400 bg-gray-300 " text="A New Hope 1"/>
-          <ResultCheackBox className="w-11/12 p-5 rounded-lg hover:bg-gray-400 bg-gray-300 " text="A New Hope 1"/>
-      </div>
-        <div>
-        <div className="flex  flex-row-reverse m-20 mt-5">
-          <div className="relative w-24 h-24 bg-gray-300 rounded-full">
-            <div className="absolute w-16 h-16 rounded-full m-4"><img className="bg-green-700 hover:bg-green-400 rounded-full" src={puseImage} alt="" /></div>
+    <>
+      {questionAnswer.length > 0 && <div className="main">
+        <div className="container mx-auto">
+          <div className="mt-10">
+            <h2 className="font-bold text-2xl">{questionAnswer[currentQuestion]?.question}</h2>
+            <p className="font-medium text-lg mt-5  mb-2">Question can have multiple answers</p>
+            <hr className="mt-5" />
           </div>
-        </div>
-        <div className="">
-          <div className="rounded-lg h-20 w-11/12 shadow-lg">
-            <div className="flex justify-between">
-              <button className="w-24 h-12 bg-green-300 m-5 cursor-pointer rounded-lg p-3 font-bold">Previous</button>
-              <div className="w-8/12 bg-gray-200 h-6 mt-8 round">
-                <div className="w-6/12 h-6 bg-blue-600"></div>
+          <div className="grid gap-4 grid-cols-2 mt-10">
+            {questionAnswer[currentQuestion].options.map((option, index) => (
+              <ResultCheackBox className="w-11/12 p-5  rounded-lg text-2xl hover:bg-gray-400 bg-gray-300 " value={index} checked={option.checked} text={option.text} onChange={(e) => handelChange(e, index)} />
+            ))}
+            {/* <ResultCheackBox className="w-11/12 p-5 rounded-lg hover:bg-gray-400 bg-gray-300 " text="A New Hope 1"/>
+          <ResultCheackBox className="w-11/12 p-5 rounded-lg hover:bg-gray-400 bg-gray-300 " text="A New Hope 1"/>
+          <ResultCheackBox className="w-11/12 p-5 rounded-lg hover:bg-gray-400 bg-gray-300 " text="A New Hope 1"/>
+          <ResultCheackBox className="w-11/12 p-5 rounded-lg hover:bg-gray-400 bg-gray-300 " text="A New Hope 1"/>
+          <ResultCheackBox className="w-11/12 p-5 rounded-lg hover:bg-gray-400 bg-gray-300 " text="A New Hope 1"/> */}
+          </div>
+          <div>
+            <div className="flex  flex-row-reverse m-20 mt-5">
+              <div className="relative w-24 h-24 bg-gray-300 rounded-full">
+                <div className="absolute w-16 h-16 rounded-full m-4"><img className="bg-green-700 hover:bg-green-400 rounded-full" src={puseImage} alt="" /></div>
               </div>
-              <NavLink to="/result">
-              <button className="w-24 h-12 bg-green-300 m-5 cursor-pointer rounded-lg p-3 font-bold">NextPage</button>
-              </NavLink>
-            </div>  
+            </div>
+            <div className="">
+              <div className="rounded-lg h-20 w-11/12 shadow-lg">
+                <div className="flex justify-between">
+                  <button className="w-44 h-16 bg-green-300 m-2 cursor-pointer rounded-lg p-5 font-bold" onClick={handlePrevious}>PreviousQuestion</button>
+                  <div className="w-8/12 bg-gray-200 h-6 mt-8 round">
+                    <div className="bg-blue-600 h-6 w- {percentage} "></div>
+                    <>completed{percentage}%! { }</>
+
+                  </div>
+                  <button className="w-36 h-16 bg-green-300 m-2 cursor-pointer rounded-lg p-5 font-bold" onClick={percentage === 100 ? submit : handleNext}>{percentage === 100 ? "SubmitQuiz" : "NextQuestion"}</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      </div>  
-    </div>
+      </div>}
+
+    </>
+
   )
 }

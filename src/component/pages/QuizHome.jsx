@@ -17,7 +17,7 @@ export default function QuizHome() {
           {quizList.length > 0 && <InfiniteScroll dataLength={quizList.length} hasMore={hasMore} next={() => setPage(page + 8)}>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4  place-items-center">
               {quizList.map((quizCategory, key) => (
-                <NavLink to="/"><QuizCard quizData={quizCategory} /></NavLink>
+                <NavLink to={`quiz/${quizCategory.quizCategoryId}`}><QuizCard quizData={quizCategory} /></NavLink>
               ))}
             </div>
           </InfiniteScroll>}
