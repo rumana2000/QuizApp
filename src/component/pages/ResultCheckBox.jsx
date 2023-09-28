@@ -1,5 +1,5 @@
 
-export default function ResultCheackBox ({className,  text, ...rest}) {
+export default function ResultCheckBox ({className,  text, ...rest}) {
   return (
     <label className={className}>
     <input {...rest} type="checkbox"/>{text}

@@ -1,12 +1,12 @@
-import ResultCheackBox from "../pages/ResultCheackBox";
+import ResultCheckBox from "../pages/ResultCheckBox";
 import SuccessImage from "../../assets/images/success.png";
 import sedImage from "../../assets/images/sed.jpg";
 import happyImage from "../../assets/images/happy.jpg";
 import failImage from "../../assets/images/fail.png";
 import QuastionImage from "../../assets/images/question-mark.png";
-import { useLocation, useParams } from "react-router-dom";
+import { NavLink, useLocation, useParams } from "react-router-dom";
 import _ from "lodash"
-import { useEffect, useState } from "react";
+import { useEffect, useState,} from "react";
 
 export default function Result() {
   const { id } = useParams()
@@ -68,7 +68,8 @@ export default function Result() {
   
   return (
     <div className="main">
-      <div className="container mx-auto">
+     <NavLink to="/">
+     <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 content-center p-10">
           <h2 className="text-2xl font-bold p-20 mt-10">Your score is<br /> {totalCorrectAnwser * 5}  out of {totalQuestion * 5} </h2>
           <img src = {image} className="w-96" alt="" />
@@ -90,12 +91,13 @@ export default function Result() {
             </div>
             <div className="mt-5 grid gap-4 grid-cols-2 justify-items-center">
               {data.options.map((option,idx) => (
-               <ResultCheackBox className={`w-11/12 p-5 rounded-lg ${answerStatusBG(option)}`} checked = {option.checked} disabled = "true" text = {option.text}/>
+               <ResultCheckBox className={`w-11/12 p-5 rounded-lg ${answerStatusBG(option)}`} checked = {option.checked} disabled = "true" text = {option.text}/>
               ))}
           </div>
           </div>
         ))}
       </div>
+     </NavLink>
     </div>
   )
 }

@@ -32,9 +32,6 @@ export default function LogForm() {
       setError('Dose not match credentials')
     }
     setLoading(false)
-
-    console.log(email);
-    console.log(password);
   }
   
   return (
