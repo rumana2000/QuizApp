@@ -1,9 +1,9 @@
-import Layout from "./component/pages/Layout";
+import Layout from "./component/Layout";
 import Quiz from "./component/pages/Quiz";
 import Result from "./component/pages/Result";
-import LogIn from "./component/pages/LogIn";
-import SignUp from "./component/pages/SignUp";
-import QuizHome from "./component/pages/QuizHome";
+import LogIn from "./component/LogIn";
+import SignUp from "./component/SignUp";
+import QuizHome from "./component/QuizHome";
 import { Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext"
 import PrivateRoute from "./component/pages/PrivateRoute";
@@ -22,7 +22,6 @@ function App() {
         </Route>
       </Routes>
     </AuthProvider>
-
   );
 }
 

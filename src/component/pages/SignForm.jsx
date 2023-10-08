@@ -16,7 +16,6 @@ export default function SignForm() {
   const [agree, setAgree] = useState('');
   const [error, setError] = useState('')
   const [loading, setLoading] = useState('')
-
   const { signup } = useAuth();
   const navigate = useNavigate();
 
@@ -51,7 +50,6 @@ export default function SignForm() {
       setError(err.message)
       console.log(err);
     }
-
   }
 
 

@@ -9,17 +9,15 @@ export default function LogForm() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
-
   const { login } = useAuth();
   const navigate = useNavigate()
+
   function handleEmail(e) {
     setEmail(e.target.value)
   }
-
   function hanndlePassword(e) {
     setPassword(e.target.value)
   }
-
   async function handleSubmit(e) {
     e.preventDefault();
     setLoading(true)
@@ -33,12 +31,11 @@ export default function LogForm() {
     }
     setLoading(false)
   }
-  
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <InputText type='email' value={email} placeholder="Enter E-mail" required={true} onChangeHandel={handleEmail} />
-        <InputText type='password' value={password} placeholder="Enter Password" required={true} onChangeHandel={hanndlePassword} />
+        <InputText type='email' value={email} placeholder="Enter E-mail" required={true} onChangeHandeler={handleEmail} />
+        <InputText type='password' value={password} placeholder="Enter Password" required={true} onChangeHandeler={hanndlePassword} />
         <SubmitButton type="submit">{loading ? 'Loading...' : 'LogIn'}</SubmitButton>
         {error && <p className="text-lg bg-red-400 text-white outline-red-400 mt-5  md:w-96 w-full p-2 hover:bg-red-600 gap-0 rounded">{error}</p>}
         <p className="text-sm font-light text-gray-500 dark:text-gray-400 mt-5">

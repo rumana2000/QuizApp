@@ -7,9 +7,7 @@ export default function useQuizList (page) {
   const [quizList, setQuizList] = useState([])
   const [hasMore, setHasMore] = useState(true)
 
-
-  useEffect(() => {
-    async function fatchQuizList () {
+  async function fatchQuizList () {
       const db = getDatabase()
       const quizRef = ref(db ,"quiz_categories" )
       const quizQuery = query (
@@ -18,32 +16,24 @@ export default function useQuizList (page) {
         startAt("" + page),
         limitToFirst(8)
       )
-      
       try {
         setLoading(true)
         let res = await get(quizQuery);
         if (res.exists()) {
-          console.log('Current state of quizList' , quizList);
-          console.log('Incoming value from api' , Object.values(res.val()));
-          setQuizList((prevState) =>[...prevState,...Object.values(res.val())])
-
-          console.log('Current state of quizList after update' , quizList);
-        } else {
+          setQuizList((prevQuizList) => {
+            return [...prevQuizList,...Object.values(res.val())]
+          })
+        }else {
           setHasMore(false)
         }
       }catch(err) {
         console.log(err);
-        setLoading(false)
-        
+        setLoading(false);
         console.log(loading);
       }
     }
-
-    // setTimeout(() => {
-    //   fatchQuizList();
-    // }, 3000)
-
-    fatchQuizList();
+  useEffect(() => {
+    fatchQuizList()
   },[page])
 
   return {

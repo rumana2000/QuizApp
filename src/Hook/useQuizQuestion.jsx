@@ -15,7 +15,6 @@ export default function useQuizQuestion (quizCategoryId) {
         questionRef,
         orderByKey(),
       )
-     
       try {
         let res = await get(questionQuery);
         if (res.exists()) {
@@ -28,9 +27,6 @@ export default function useQuizQuestion (quizCategoryId) {
         console.log(loading);
       }
     }
-
-
-
     fatchQuizList();
   },[quizCategoryId])
 

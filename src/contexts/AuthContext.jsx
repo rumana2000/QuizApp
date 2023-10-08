@@ -28,13 +28,10 @@ export function AuthProvider({children}) {
     await updateProfile(auth.currentUser, {
       displayName : username
     })
-
     let user = auth.currentUser;
-
     setAuthUser({
       ...user
     })
-
     return user
   }
 

@@ -1,6 +1,5 @@
 import ResultCheckBox from "../pages/ResultCheckBox";
 import SuccessImage from "../../assets/images/success.png";
-import sedImage from "../../assets/images/sed.jpg";
 import happyImage from "../../assets/images/happy.jpg";
 import failImage from "../../assets/images/fail.png";
 import QuastionImage from "../../assets/images/question-mark.png";
@@ -16,10 +15,6 @@ export default function Result() {
   const [totalCorrectAnwser, setTotalCorrectAnwser] = useState(0)
   const [totalQuestion, setTotalQuestion] = useState(questionAnswer.length)
   const [image, setImage] = useState(failImage)
-
-  questionAnswer.map((data, idx) => data.options.map((option, idx) => console.log(option.checked)))
-
-
 
   useEffect(() => {
     let count = 0
@@ -54,7 +49,7 @@ export default function Result() {
     return bg_class
   }
 
-  useEffect (() => {
+useEffect (() => {
     let  correctParcentage = ((totalCorrectAnwser) / ( totalQuestion) * 100)
     console.log(correctParcentage);
     if (correctParcentage >= 80) {

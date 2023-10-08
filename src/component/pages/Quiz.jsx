@@ -30,7 +30,6 @@ function reducer(state, action) {
 
 }
 
-
 export default function Quiz() {
   const { id } = useParams()
   // this quizQuestion came from database
